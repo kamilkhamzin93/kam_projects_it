@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title><?php get_title(correct_data($_GET['page'])); ?> :: <?=SITE_TITLE;?></title>
+		<!--[if IE]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<meta name="keywords" content="it, projects, programming, developing, php, css, html, javascript, js, jquery" />
+		<meta name="description" content="It projects и всё, что с ними связано" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<?php get_scripts(); ?>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<a href="?page=main" class="logo">IT Projects</a>
+				<nav>
+					<ul>
+						<?php get_navigation(); ?>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div class="main">
+			<div class="container">

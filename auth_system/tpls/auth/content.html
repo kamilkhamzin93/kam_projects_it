@@ -1,0 +1,40 @@
+<h3>Авторизация</h3>
+<div class="auth">
+	<form action="?page=auth" method="POST">
+		<table cellpadding="0" cellspacing="5" width="280" height="160" border="0">
+			<tr>
+				<td class="field">
+					Логин:
+				</td>
+				<td class="text_field">
+					<input type="text" id="user_login" name="user_login" />
+				</td>
+			</tr>
+			<tr>
+				<td class="field">
+					Пароль:
+				</td>
+				<td class="text_field">
+					<input type="password" id="user_password" name="user_password"/>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="submit" id="submit_btn" name="auth_submit" value="Войти" />
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<label id="hint"></label>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<a href="?page=forgot">Забыли пароль?</a>
+					<br />
+					<a href="?page=reg">Всё ещё нет профиля</a>
+				</td>
+			</tr>
+		</table>
+	</form>
+</div>

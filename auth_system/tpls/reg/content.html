@@ -1,0 +1,57 @@
+<h3>Регистрация нового пользователя</h3>
+<div id="register">
+	<div class="hint" id="hint" hidden>
+		<p id="hint_text"></p>
+	</div>
+	<form action="?page=reg&act=reg" method="POST" enctype="multipart/form-data">
+		<table cellspacing="10" cellpadding="5" width="750" height="300" border="0" >
+			<tr>
+				<td class="field">Логин:</td>
+				<td class="text_field">
+					<input type="text" name="login" id="login">
+				</td>
+			</tr>
+			<tr>
+				<td class="field">Фамилия:</td>
+				<td class="text_field"><input type="text" name="last_name" id="last_name"></td>
+			</tr>
+			<tr>
+				<td class="field">Имя:</td>
+				<td class="text_field"><input type="text" name="first_name" id="first_name"></td>
+			</tr>
+			<tr>
+				<td class="field">Дата рождения:</td>
+				<td class="text_field"><input type="date" name="age_date" id="age_date"></td>
+			</tr>
+			<tr>
+				<td class="field">Эл. почта:</td>
+				<td class="text_field"><input type="text" name="email" id="email"></td>
+			</tr>
+			<tr>
+				<td class="field">Предпочтения:</td>
+				<td class="text_field">
+					<textarea rows="5" name="habits" id="habits"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td class="field">Аватар:</td>
+				<td class="text_field">
+					<input type="file" name="picture" id="picture" accept=".png, .jpeg, .jpg, .gif">
+				</td>
+			</tr>
+			<tr>
+				<td class="field">
+					<input type="checkbox" name="agreement" id="agreement_check" onclick="submit_ok()" />
+				</td>
+				<td class="text_field">
+				Я прочитал "<a href="?page=agree" target="_blank">Лицензионное соглашение</a>"<br /> и согласен со всеми условиями.
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" align="center" >
+					<input type="submit" id="submit_btn" value="Зарегистрироваться" disabled />
+				</td>
+			</tr>
+		</table>
+	</form>
+</div>

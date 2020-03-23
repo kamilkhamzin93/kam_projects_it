@@ -1,0 +1,35 @@
+<h3>Профиль пользователя</h3>
+<div class="profile">
+	<?php 
+		$row = get_data_from_db($_SESSION['login']); 
+		
+		$picture =  IMG_FOLDER . base64_decode($row['picture']); 
+	?>
+	<table cellspacing="2" cellpadding="2" width="400" height="500" border="0">
+		<tr>
+			<td colspan="2" >
+				<img src="<?php echo $picture; ?>" width="256" height="256" />
+			</td>
+		</tr>
+		<tr>
+			<td class="field">Фамилия: </td>
+			<td class="field_value"><?php echo $row['last_name']; ?></td>
+		</tr>
+		<tr>
+			<td class="field">Имя: </td>
+			<td class="field_value"><?php echo $row['first_name']; ?></td>
+		</tr>
+		<tr>
+			<td class="field">Дата рождения: </td>
+			<td class="field_value"><?php echo correct_date($row['age']); ?></td>
+		</tr>
+		<tr>
+			<td class="field">Эл. почта: </td>
+			<td class="field_value"><?php echo $row['email']; ?></td>
+		</tr>
+		<tr>
+			<td class="field">Предпочтения: </td>
+			<td class="field_value"><?php echo $row['habits']; ?></td>
+		</tr>
+	</table>
+</div>
