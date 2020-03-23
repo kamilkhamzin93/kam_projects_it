@@ -1,5 +1,5 @@
-Ћбеспечить путь к index.php = localhost/auth_system/index.php
+РџСѓС‚СЊ index.php = localhost/auth_system/index.php
 
-Ѓаза данных - it_projects_db
+Р‘Р°Р·Р° РґР°РЅРЅС‹С… - it_projects_db
 
-запуск скриптов: https://localhost/auth_system/
+РЎСЃС‹Р»РєР°: https://localhost/auth_system/
